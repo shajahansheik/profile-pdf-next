@@ -23,12 +23,13 @@ function NewUser() {
 
     const submit = () => {
         console.log("userData", userData)
-        axios.post('http://localhost:3000/create',userData).then(res=>{
+        axios.post('http://localhost:3000/api/createpdf',userData).then(res=>{
             // setUserData(initialDetails);
             // Router.push('/')
             console.log(res)
         })
-
+        // const res = await fetch(`http://localhost:3000/api/`);
+        // let data = (await res.json())?.data;
     }
 
     return (
