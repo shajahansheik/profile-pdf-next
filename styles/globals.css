@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Comfortaa', cursive;
+    
+}
+
+@layer components{
+    .input-field {
+        @apply w-full h-10 rounded-md px-2 border bg-gray-50 focus:bg-white focus:border-2 focus:border-gray-200 focus:outline-none 
+    }
+}
